@@ -14,6 +14,9 @@ module.exports = function(eleventyConfig) {
         dir: {
           input: "src",
           output: "public",
-        }
+        },
+
+        htmlTemplateEngine: "njk",
+        minify: process.env.ELEVENTY_ENV === "production",
     }
 }
